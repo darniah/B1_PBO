@@ -34,3 +34,4 @@ public class Binatang extends KebunBinatang{
     }
 
 }
+
