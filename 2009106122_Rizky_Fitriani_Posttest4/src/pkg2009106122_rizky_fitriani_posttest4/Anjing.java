@@ -1,4 +1,4 @@
-package praktikum4;
+package pkg2009106122_rizky_fitriani_posttest4;
 
 public class Anjing extends PetShop {
     private String petId;
