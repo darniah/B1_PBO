@@ -13,4 +13,5 @@ public class ekspor extends pengiriman{
     public ekspor (pengiriman kirim,String nama_barang,int no_kirim, String ekspedisi, String status_kirim, double berat_barang, String tgl_kirim){
         super (no_kirim, nama_barang, ekspedisi, status_kirim, berat_barang, tgl_kirim);
     }
+
 }

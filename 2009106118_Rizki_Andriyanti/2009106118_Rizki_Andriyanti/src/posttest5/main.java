@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package posttest4;
+package posttest5;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -49,8 +49,9 @@ public final class main {
                 showMenu();
                 break;
             case 2 :
+                String krm;
                 System.out.println("=====PENGIRIMAN====");
-                pengiriman kirim = new pengiriman();
+                pengiriman kirim = new pengiriman() {};
                 
                 System.out.println("No Pengiriman : "+kirim.getNo_kirim());
                 System.out.println("Ekspedisi : "+kirim.getEkspedisi());
@@ -58,7 +59,7 @@ public final class main {
                 System.out.println("Status Kirim : " + kirim.getStatus_kirim());
                 System.out.println("Berat Barang : "+kirim.getBerat_barang()+"kg");
                 System.out.println("======="+kirim.getTgl_kirim()+"=========");
-
+                
             case 3 :
                 System.exit(0);
             default :
@@ -67,10 +68,10 @@ public final class main {
     }
     
     public static void kembali()throws IOException{
-        Scanner input = new Scanner(System.in);
+        Scanner masuk = new Scanner(System.in);
         System.out.println("");
         System.out.print("Tekan [Enter] untuk kembali..");
-        input.nextLine();
+        masuk.nextLine();
     }
     
     public static void showMenu()throws IOException{
@@ -109,7 +110,7 @@ public final class main {
             }
     }
 
-    public static void lihatdatatas() throws IOException{
+    public final static void lihatdatatas() throws IOException{
         if(listTas.isEmpty()){
             System.out.println("Data Kosong");
             kembali();
@@ -125,26 +126,27 @@ public final class main {
         }
     }
     
-    public static void buatdatatas() throws IOException{
-        Scanner input = new Scanner(System.in);
+    public final static void buatdatatas() throws IOException{
+        Scanner masukkan = new Scanner(System.in);
         System.out.print("Kode : ");
-        int kode = input.nextInt();
-        input.nextLine();
+        int nomor = masukkan.nextInt();
+        masukkan.nextLine();
         System.out.print("Nama Tas : ");
-        String namaTas = input.nextLine();
+        String namaTas = masukkan.nextLine();
         System.out.print("Nama Brand : ");
-        String brand = input.nextLine();
+        String brand = masukkan.nextLine();
         System.out.print("Status : ");
-        String status = input.nextLine();
+        String status = masukkan.nextLine();
         System.out.print("Tujuan Negara : ");
-        String tujuan = input.nextLine();
+        String tujuan = masukkan.nextLine();
         System.out.print("Tanggal Produksi : ");
-        String tgl = input.nextLine();
-        listTas.add(kode+"\t\t"+namaTas+"\t\t"+brand+"\t\t"+status+"\t\t"+tujuan+"\t"+tgl);
+        String tgl = masukkan.nextLine();
+        
+        listTas.add(nomor+"\t\t"+namaTas+"\t\t"+brand+"\t\t"+status+"\t\t"+tujuan+"\t"+tgl);
         kembali();
     }
     
-    public static void editdatatas() throws IOException{
+    public final static void editdatatas() throws IOException{
         isEditing = true;
         lihatdatatas();
         Scanner input = new Scanner(System.in);
@@ -184,17 +186,17 @@ public final class main {
                 System.out.println(e.getMessage());
             }
         
-        isEditing = false; 
+        isEditing =  false; 
         kembali();
     }
           
-    public static void hapusdatatas() throws IOException{
+    public final static void hapusdatatas() throws IOException{
         isEditing = true;
         lihatdatatas();
-        Scanner input = new Scanner(System.in);
+        Scanner masuk = new Scanner(System.in);
         System.out.println("-----------------");
             System.out.print("Pilih Indeks> ");
-            int index = Integer.parseInt(input.nextLine());
+            int index = Integer.parseInt(masuk.nextLine());
 
             try {
                 if (index > listTas.size()) {
@@ -211,6 +213,6 @@ public final class main {
             isEditing = false;
             kembali();
     }
-       
 
+    
 }
