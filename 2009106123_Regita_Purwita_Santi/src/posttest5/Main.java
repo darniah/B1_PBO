@@ -1,4 +1,4 @@
-package posttest4;
+package posttest5;
 
 import java.util.ArrayList;
 import java.io.BufferedReader;
@@ -20,7 +20,7 @@ public class Main {
         dataktp.message();
         ShowMenu ();
     }
-    
+     
     static void ClearScreen() {
         try {
             final String os = System.getProperty("os.name");
@@ -46,7 +46,7 @@ public class Main {
             System.out.println("===================================================");
             System.out.println("                   TAMBAH DATA KTP                 ");
             System.out.println("===================================================");
-            System.out.print("-> NIK                  :");
+            System.out.print("-> NIK                  : ");
             int Nik = Integer.parseInt(input.readLine());
             dataktp.setNik(Nik);
             System.out.print("-> NAMA                 : ");
@@ -96,8 +96,8 @@ public class Main {
     }
     void addData(int nik,String nama,String ttl,String jk,String agama,String status,String goldar, String kewarganegaraan,String alamat,String provinsi, String kabupaten, String kecamatan, String desa, String rtrw){
         Data_KTP.add(new DataPenduduk(nik,nama,ttl,jk,agama,status,goldar, kewarganegaraan,alamat,provinsi, kabupaten, kecamatan, desa, rtrw));
-        System.out.println("===================================================");
-        System.out.println("\nDATA KTP DENGAN NIK " + nik+ " BERHASIL DITAMBAHKAN");
+        System.out.println("\n===================================================");
+        System.out.println("DATA KTP DENGAN NIK " + nik+ " BERHASIL DITAMBAHKAN");
         System.out.println("===================================================");
     }
     
@@ -284,3 +284,4 @@ public class Main {
     
     
 }
+
