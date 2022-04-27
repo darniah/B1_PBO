@@ -7,7 +7,7 @@ package posttest5;
 
 /**
  *
- * @author MSi-Modern
+ * @author MSi-Moderns
  */
 public class beasiswa extends informasi {
     private String kategori;

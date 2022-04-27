@@ -48,7 +48,7 @@ public abstract class informasi {
     public void setTanggal_penutupan(String tanggal_penutupan) {
         this.tanggal_penutupan = tanggal_penutupan;
     }
-    
+
     
 }
 

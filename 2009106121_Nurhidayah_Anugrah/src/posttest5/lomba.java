@@ -17,11 +17,6 @@ public class lomba extends informasi {
         this.biayapendaftaran = biayapendaftaran;
     }
 
-    
-//    public lomba(){
-//        this.biayapendaftaran = 0 ;
-//    }
-
     public int getBiayapendaftaran() {
         return biayapendaftaran;
     }
