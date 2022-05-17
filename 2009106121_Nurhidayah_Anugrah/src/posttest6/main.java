@@ -90,7 +90,7 @@ public final class main{
             System.out.print("Kategori:");
             String kategori = input.readLine();
             
-            System.out.println("Tahun:");
+            System.out.print("Tahun:");
             int tahun = Integer.parseInt(input.readLine());
             
             listinformasi.add(new informasi(namainfo, penyelenggara, tanggal_pendaftaran, tanggal_penutupan) {});
