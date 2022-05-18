@@ -2,14 +2,19 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package posttest5;
+package posttest6;
 
 //abstract class
-public abstract class informasi {
+
+import posttest5.*;
+//abstract class
+
+public abstract class informasi implements interfacecsi{
     public String namainfo;
     private String penyelenggara;
     private String tanggal_pendaftaran;
     private String tanggal_penutupan;
+    private boolean tahun;
     
     public informasi(String namainfo, String penyelenggara, String tanggal_pendaftaran, String tanggal_penutupan){
      this.namainfo = namainfo;
@@ -20,6 +25,11 @@ public abstract class informasi {
 
     public String getNamainfo() {
         return namainfo;
+    }
+    
+    public void waktu(){
+        tahun = true;
+        System.out.println("Tahun" + tahun + "\nInformasi beasiswa dan lomba tersebut masih berlaku");
     }
 
     public void setNamainfo(String namainfo) {
