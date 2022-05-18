@@ -12,5 +12,6 @@ package Posttest6_Darniah;
 public interface InterfaceKebunbinatang {
         String pengurus = "Darniah";
         
+        
      void Pengurus();
 }

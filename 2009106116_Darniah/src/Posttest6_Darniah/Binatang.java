@@ -7,6 +7,7 @@ public class Binatang extends KebunBinatang{
     public Binatang(String Nama_Hewan, String Jenis_Hewan, String Habitat_Hewan, int Jumlah_Hewan, String Warna) {
         super(Nama_Hewan, Jenis_Hewan, Habitat_Hewan, Jumlah_Hewan);
         this.Warna = Warna;
+        
     }
     void display(){
         System.out.println("Nama_Hewan:"+ this.Nama_Hewan);
