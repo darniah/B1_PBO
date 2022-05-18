@@ -25,31 +25,6 @@ public class DataKelurahan extends DataKecamatan {
     public void setRtrw(String rtrw) {
         this.rtrw = rtrw;
     }
-
-//    public String getProvinsi() {
-//        return getProvinsi();
-//    }
-//
-//    public void setProvinsi(String provinsi) {
-//        this.setProvinsi(provinsi);
-//    }
-//
-//    public String getKabupaten() {
-//        return getKabupaten();
-//    }
-//
-//    public void setKabupaten(String kabupaten) {
-//        this.setKabupaten(kabupaten);
-//    }
-//
-//    public String getKecamatan() {
-//        return getKecamatan();
-//    }
-//
-//    public void setKecamatan(String kecamatan) {
-//        this.setKecamatan(kecamatan);
-//    }
-    
     
     void InfoDataKelurahan(String getDesa, String getRtrw){
         System.out.println("---------------------------------------------------");
