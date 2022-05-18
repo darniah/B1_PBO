@@ -51,7 +51,6 @@ public class TradeMarket {
         sl.add(sell);
         sell.barangSukes();
     }
-
     public void tambahData2(ArrayList<Buy> by) throws IOException {
         clearScreen();
 
