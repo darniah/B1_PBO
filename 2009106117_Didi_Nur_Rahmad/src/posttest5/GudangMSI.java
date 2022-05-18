@@ -5,25 +5,21 @@
  */
 package posttest5;
 
-
-
-
 abstract class GudangMSI {
+
     public final String merk = "==| MSI |==";
     private String nama;
     private String warna;
     private int stok;
     private int harga;
 
-    GudangMSI(String merk,String nama, String warna, int stok, int harga) {
-        
+    GudangMSI(String merk, String nama, String warna, int stok, int harga) {
+
         this.nama = nama;
         this.warna = warna;
         this.stok = stok;
         this.harga = harga;
     }
-    
-    
 
     public String getNama() {
         return nama;
@@ -58,6 +54,5 @@ abstract class GudangMSI {
     }
 
     abstract void cabang();
-       
-    
+
 }
