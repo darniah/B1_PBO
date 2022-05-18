@@ -31,6 +31,10 @@ public abstract class informasi implements interfacecsi{
         tahun = true;
         System.out.println("Tahun" + tahun + "\nInformasi beasiswa dan lomba tersebut masih berlaku");
     }
+    
+    public void berlaku(){
+        System.out.println("");
+    }
 
     public void setNamainfo(String namainfo) {
         this.namainfo = namainfo;
