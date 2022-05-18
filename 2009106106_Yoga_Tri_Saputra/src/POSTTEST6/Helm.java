@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package POSTTEST6;
 
 /**
  *
  * @author Asus
  */
+
 abstract public class Helm {
 
 // Atribut
@@ -99,8 +96,8 @@ abstract public class Helm {
     }
 
 //Method
-    public abstract void tampildata() ;
-    
+    public abstract void tampildata();
+
     void infotambah() {
         System.out.print("\nData Berhasil di Tambah...\n");
     }

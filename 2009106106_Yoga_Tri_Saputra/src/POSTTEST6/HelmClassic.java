@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package POSTTEST6;
 
-/**
- *
- * @author Asus
- */
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -15,7 +7,8 @@ import java.time.format.DateTimeFormatter;
  *
  * @author Asus
  */
-public final class HelmClassic extends Helm implements Struk  {
+
+public final class HelmClassic extends Helm implements Struk {
 
     private String jenis;
     final String kategori = "Helm Classic";
@@ -49,7 +42,7 @@ public final class HelmClassic extends Helm implements Struk  {
 
     @Override
     final public void tampildata() {
-        form();        
+        form();
         waktu();
         System.out.println("\nKategori    : " + this.kategori);
         System.out.println("Nama        : " + this.nama);

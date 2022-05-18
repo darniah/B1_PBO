@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package POSTTEST6;
 
 import java.io.BufferedReader;
@@ -13,6 +9,7 @@ import java.util.ArrayList;
  *
  * @author Asus
  */
+
 public class HelmetShopSport {
 
     BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
