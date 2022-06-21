@@ -13,6 +13,7 @@ public class Manajemen extends KebunBinatang {
        System.out.println("Jenis_Hewan:"+ this.Jenis_Hewan);
        System.out.println("Habitat_Hewan:"+ this.Habitat_Hewan);
        System.out.println("Jumlah_Hewan:"+ this.Jumlah_Hewan);
+      
        
    }
    

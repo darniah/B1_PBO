@@ -15,6 +15,7 @@ abstract public class KebunBinatang implements InterfaceKebunbinatang{
         this.Habitat_Hewan = Habitat_Hewan;
         this.Jumlah_Hewan = Jumlah_Hewan;
         
+        
     }
 public void Pengurus(){
     pengurus =true;
