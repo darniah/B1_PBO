@@ -7,8 +7,7 @@ public class Main {
     // Menu Login 
     public static void menuLogin() {
         int menu;
-        Scanner pilih = new Scanner(System.in);    
-        
+        Scanner pilih = new Scanner(System.in);
         System.out.println("=============================");
         System.out.println("|      SELAMAT DATANG       |");
         System.out.println("|  di PERPUSTAKAAN SMA N 2  |");
@@ -334,7 +333,6 @@ public class Main {
         baru.setNama("Asril");
         baru.setNisn(100502);
         baru.setKelas(10);
-        
         System.out.println("=============================");
         System.out.println("|  Daftar Nama Pengunjung   |");
         System.out.println("=============================");
