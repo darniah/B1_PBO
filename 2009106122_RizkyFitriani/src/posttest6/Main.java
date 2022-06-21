@@ -44,7 +44,7 @@ private final String kelompok = "Kategori barang di petshop Primrose";
         input = new Scanner(System.in);
 
         String filePath;
-        filePath = System.console() == null ? "src/pkg2009106122_rizky_fitriani_posttest4/petshop.csv" : "/petshop.csv";
+        filePath = System.console() == null ? "src/petshop.csv" : "/petshop.csv";
         fileName = System.getProperty("petshop.dir") + filePath;
 
         System.out.println("FILE: " + fileName);
@@ -180,9 +180,9 @@ private final String kelompok = "Kategori barang di petshop Primrose";
         petshopprimrose.setNo(16);
         petshopprimrose.setMerk("Super Zeolite");
         petshopprimrose.setJenis("unscented litter");
-        petshopprimrose.setBerat(25.000);
+        petshopprimrose.setBerat(20.000);
         petshopprimrose.setHarga(30.000);
-        petshopprimrose.setKategori("pasir");
+        petshopprimrose.setKategori("pasir tidak beraroma");
         
         System.out.println("Tuliskan merk barang!");
         System.out.print("Jawab: ");
